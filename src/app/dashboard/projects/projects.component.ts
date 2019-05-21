@@ -25,6 +25,10 @@ export class ProjectsComponent implements OnInit {
     handleRepoRes(res)
     {
         this.repos = res;
-        this.reposLoaded = true;
+
+        if(this.repos[0] && this.repos[0].html_url)
+        {
+            this.reposLoaded = true;
+        }
     }
 }
