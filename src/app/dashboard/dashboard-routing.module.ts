@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
     {
@@ -9,7 +11,11 @@ const routes: Routes = [
         children : [
             {
                 path : "projects",
-                loadChildren : "./projects/projects.module#ProjectsModule"
+                component : ProjectsComponent
+            },
+            {
+                path : "resume",
+                component : ResumeComponent
             }
         ]
     }   
