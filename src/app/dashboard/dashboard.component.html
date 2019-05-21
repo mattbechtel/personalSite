@@ -16,7 +16,9 @@
         </div>
     </nav>
     
-    <body></body>
+    <body class="dashboard-body" *ngIf="router.url === '/dashboard'">
+        <h1 class="dashboard-h1">About Me</h1>
+    </body>
     
     <router-outlet></router-outlet>
 </html>

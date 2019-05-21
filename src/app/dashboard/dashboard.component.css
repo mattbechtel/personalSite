@@ -4,7 +4,13 @@ html
     height: 100%;
 }
 
-body 
+.dashboard-body
 {
-    background-color: black;
+    background-color: gray;
+}
+
+.dashboard-h1 
+{
+    background-color: gray;
+    margin: 30px;
 }

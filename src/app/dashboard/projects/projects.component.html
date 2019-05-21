@@ -1,3 +1,9 @@
-<body>
-    <a href="https://github.com/mattbechtel">My Github Page</a>    
+<body *ngIf="reposLoaded === true">
+    <p>Visit My Github Page @ <a href="https://github.com/mattbechtel">https://github.com/mattbechtel</a> </p>
+    
+    <p>Project links:</p>
+
+    <tr *ngFor="let repo of repos">
+        <td class="repo-name">{{repo?.name}}</td> <td class="repo-link"><a href={{repo?.html_url}}>{{repo?.html_url}}</a></td>
+    </tr>
 </body>
