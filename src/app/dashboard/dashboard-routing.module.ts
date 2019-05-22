@@ -6,19 +6,19 @@ import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
     {
-        path : "",
+        path : '',
         component : DashboardComponent,
         children : [
             {
-                path : "projects",
+                path : 'projects',
                 component : ProjectsComponent
             },
             {
-                path : "resume",
+                path : 'resume',
                 component : ResumeComponent
             }
         ]
-    }   
+    }
 ];
 
 @NgModule({
