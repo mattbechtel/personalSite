@@ -5,12 +5,18 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResumeComponent } from './resume/resume.component';
+import { CumulativeReflectionComponent } from './cumulative-reflection/cumulative-reflection.component';
+import { GenEdReflectionComponent } from './gen-ed-reflection/gen-ed-reflection.component';
+import { EthicsEssayComponent } from './ethics-essay/ethics-essay.component';
 
 @NgModule({
     declarations: [
         DashboardComponent,
         ResumeComponent,
-        ProjectsComponent
+        ProjectsComponent,
+        CumulativeReflectionComponent,
+        GenEdReflectionComponent,
+        EthicsEssayComponent
     ],
     imports: [
         CommonModule,

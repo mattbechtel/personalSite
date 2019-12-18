@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { CumulativeReflectionComponent } from './cumulative-reflection/cumulative-reflection.component';
+import { EthicsEssayComponent } from './ethics-essay/ethics-essay.component';
+import { GenEdReflectionComponent } from './gen-ed-reflection/gen-ed-reflection.component';
 
 const routes: Routes = [
     {
@@ -10,12 +13,28 @@ const routes: Routes = [
         component : DashboardComponent,
         children : [
             {
-                path : 'projects',
-                component : ProjectsComponent
+                path: '/', 
+                component: ProjectsComponent
             },
             {
-                path : 'resume',
-                component : ResumeComponent
+                path : 'projects',
+                component: ProjectsComponent
+            }, 
+            {
+                path: 'cumulativeReflection',
+                component: CumulativeReflectionComponent
+            }, 
+            {
+                path: 'ethicsEssay',
+                component: EthicsEssayComponent
+            }, 
+            {
+                path: 'genEdReflection',
+                component: GenEdReflectionComponent
+            }, 
+            {
+                path: 'resume', 
+                component: ResumeComponent
             }
         ]
     }
